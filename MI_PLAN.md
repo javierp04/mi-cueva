@@ -41,7 +41,7 @@ Lo que me toca aguantar sin cambiar nada: una racha de 7 pérdidas seguidas. Con
 
 ## Lo que no cuadraba y cómo lo resolví
 - Con 6 operaciones al mes por estrategia y 2.000 USD por operación, las rachas malas pesan: se dejó así y que el backtest decida (el trader respondió «dale»; interpretación mía, confírmala).
-- La ficha fichas/xauusd_ruptura_donchian_eficiencia.md mantiene la posición el fin de semana (supuesto 14): choca con mi límite. Se corrige en la fase 03 (cerrar antes del cierre del viernes).
+- La hipótesis de fichas/xauusd_ruptura_donchian_eficiencia.md no cierra el viernes, así que la posición puede pasar el fin de semana, y mi plan dice que no lo hago. La regla manda tal como la escribí; queda anotado.
 
 ## Supuestos
 1. El «para qué» de la meta no se respondió: ingreso adicional.
