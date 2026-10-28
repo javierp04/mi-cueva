@@ -196,3 +196,12 @@ Supuestos del pseudocódigo (todos decididos; solo lo que el texto no dice):
 20. Si la entrada se descarta por stops level (paso 4), la orden queda consumida y no hay operación.
 21. Si faltan datos (huecos), las velas se cuentan tal como están en el CSV, sin rellenar.
 22. Los indicadores se calculan siempre, también con posición abierta y con mercado cerrado.
+
+## Fase 04 · Backtest · MOTOR
+Agente / skill: validador · validador-4de4 (código: codigo/xauusd_ruptura_donchian_eficiencia.py; operaciones, curva y reporte en resultados/xauusd_ruptura_donchian_eficiencia_*)
+Qué se hizo: backtest del pseudocódigo de la fase 03 tal cual, con datos/XAUUSD.csv (M1 Bid, 2006-01-02 a 2026-09-17, 7,34 M velas pasadas a 249.117 velas M30), resolución con las M1, entrada al Ask (Bid + spread del CSV) y salida al Bid. Dentro de muestra 2006-01-02 a 2020-05-22 10:30; fuera de muestra 2020-05-22 11:00 a 2026-09-17.
+Resultado: FUERA de muestra: factor de beneficio 1,52 (≥ 1,3 ✓) · 756 operaciones (≥ 30 ✓) · caída máxima 8,57 % (< 20 % ✓) · factor de beneficio sin la mejor operación 1,49 (> 1 ✓) → 4/4. Referencia dentro de muestra: 1,69 · 1.607 operaciones · caída 7,90 % · 1,67. AVISO: la caída de 8,57 % supera el 6 % de MI_PLAN.md (pasa el método, no encaja con el plan); además mantiene posiciones el fin de semana y opera ~120 veces al año (el plan dice ~6 al mes). Sin informe de calidad de datos.
+Supuestos: spread real del CSV como único coste (comisión 0, deslizamiento 0, sin swap; costes ×2 van en la fase 06); XAUUSD 100 oz por lote, paso 0,01, mín 0,01, máx 100, punto 0,01 USD; riesgo 1.000 USD fijo (1 % de 100.000); caída medida con pérdida flotante al cierre de cada vela M30; cada segmento corre por separado; más los 22 supuestos de la fase 03.
+Veredicto: APRUEBA (4/4 fuera de muestra, con aviso: la caída supera la que acepta el plan)
+Contraste independiente (2026-10-28): el trader corrió la misma regla en el Probador de estrategias de MT5 y dijo que el resultado es «prácticamente igual» (sin cifras guardadas aquí). Se da por buena la implementación del backtest.
+Siguiente paso: fase 05 (meseta de parámetros); la caída de 8,57 % frente al 6 % del plan sigue abierta, y la ventaja viene de la ruptura y no del filtro ni del disparo.
