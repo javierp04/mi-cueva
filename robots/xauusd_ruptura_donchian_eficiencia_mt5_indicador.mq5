@@ -15,8 +15,8 @@
 //|      Puede diferir un poco del Probador, que mira tick a tick.       |
 //|  P2. Mercado abierto = lunes a viernes; la vela cuenta si alguna     |
 //|      parte cae entre 01:05 y 23:59 de la hora del servidor.          |
-//|  P3. La orden stop es virtual, como en la estrategia (lote y stop    |
-//|      con el precio real de entrada).                                 |
+//|  P3. La orden es una BUY STOP real, como en la estrategia: se llena  |
+//|      en el nivel, o en la apertura de la vela si hay gap.            |
 //+------------------------------------------------------------------+
 #property indicator_chart_window
 #property indicator_buffers 4
@@ -52,6 +52,11 @@ double entradas[], salidas[], stops[], niveles[];
 
 int OnInit()
 {
+   if(_Period != PERIOD_M30)       // la regla es de velas de 30 minutos
+   {
+      Print("Este indicador es para M30. Gráfico actual: ", EnumToString(_Period));
+      return INIT_FAILED;
+   }
    SetIndexBuffer(0, entradas, INDICATOR_DATA); PlotIndexSetInteger(0, PLOT_ARROW, 233);
    SetIndexBuffer(1, salidas,  INDICATOR_DATA); PlotIndexSetInteger(1, PLOT_ARROW, 234);
    SetIndexBuffer(2, stops,    INDICATOR_DATA);
