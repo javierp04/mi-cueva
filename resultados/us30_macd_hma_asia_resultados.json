@@ -1,0 +1,303 @@
+{
+ "res": {
+  "IS": {
+   "operaciones": 952,
+   "pf": 1.272308799153258,
+   "pf_sin_mejor": 1.256221471025688,
+   "dd_pct": 11.195359597565929,
+   "dd_cerradas_pct": 10.419988482109629,
+   "pf_sin_swap": 1.289807741932561,
+   "pf_sin_swap_sin_mejor": 1.2735318829441094,
+   "ganadoras": 390,
+   "pct_ganadoras": 40.96638655462185,
+   "pnl_total": 103492.16000000002,
+   "pnl_bruto_total": 110038.51,
+   "swap_total": -6546.38,
+   "mejor": 6114.06,
+   "peor": -1016.17,
+   "pnl_medio": 108.71025210084035,
+   "noches_medias": 0.10399159663865547,
+   "desde": "2011-01-03T00:00",
+   "hasta": "2021-12-29T16:00",
+   "velas_m30": 129993
+  },
+  "OOS": {
+   "operaciones": 430,
+   "pf": 1.428111299368202,
+   "pf_sin_mejor": 1.379136122338675,
+   "dd_pct": 8.919876883491508,
+   "dd_cerradas_pct": 7.956762307798004,
+   "pf_sin_swap": 1.436860152761886,
+   "pf_sin_swap_sin_mejor": 1.3878714320108252,
+   "ganadoras": 174,
+   "pct_ganadoras": 40.46511627906977,
+   "pnl_total": 66415.71,
+   "pnl_bruto_total": 67754.23999999999,
+   "swap_total": -1338.58,
+   "mejor": 7597.84,
+   "peor": -999.99,
+   "pnl_medio": 154.45513953488373,
+   "noches_medias": 0.06511627906976744,
+   "desde": "2021-12-29T16:30",
+   "hasta": "2026-09-18T10:30",
+   "velas_m30": 55712
+  },
+  "meta": {
+   "velas_m1": 5284083,
+   "velas_m30": 185705,
+   "primera": "2011-01-03T00:00",
+   "ultima": "2026-09-18T10:41",
+   "corte": "2021-12-29T16:30",
+   "spread_mediano": 220.0,
+   "spread_p95": 1000.0,
+   "spread_max": 2280.0,
+   "activaciones_is": 1043,
+   "activaciones_oos": 467,
+   "filas_spread_archivo": 5600532,
+   "filas_m1": 5284083,
+   "m1_con_spread": 5284083,
+   "m1_sin_spread": 0,
+   "spread_primera": "2009-01-02T02:00",
+   "filas_spread_no_usadas": 316449,
+   "m1_cierre_distinto_al_spread_file": 0,
+   "spread_mediano_pts": 220.0
+  }
+ },
+ "contadores": {
+  "IS": {
+   "senales": 952,
+   "caso_B": 951,
+   "caso_C_rechazo": 0,
+   "caso_A_colocada": 1,
+   "senal_perdida_mercado_cerrado": 0,
+   "ordenes_vencidas": 0,
+   "ordenes_canceladas_alza": 0,
+   "ordenes_reemplazadas": 0,
+   "descartes_stops_level": 0,
+   "cancelacion_inversa_sin_mercado": 0
+  },
+  "OOS": {
+   "senales": 430,
+   "caso_B": 430,
+   "caso_C_rechazo": 0,
+   "caso_A_colocada": 0,
+   "senal_perdida_mercado_cerrado": 0,
+   "ordenes_vencidas": 0,
+   "ordenes_canceladas_alza": 0,
+   "ordenes_reemplazadas": 0,
+   "descartes_stops_level": 0,
+   "cancelacion_inversa_sin_mercado": 0
+  }
+ },
+ "anios_oos": [
+  {
+   "anio": "2022",
+   "operaciones": 98,
+   "pf": 2.1340711907088656,
+   "pf_sin_mejor": 1.9221665153775878,
+   "pf_sin_swap": 2.146805859054353,
+   "pnl": 35243.95,
+   "pct_ganadoras": 52.04081632653062
+  },
+  {
+   "anio": "2023",
+   "operaciones": 88,
+   "pf": 1.1410689218069061,
+   "pf_sin_mejor": 0.9474384795088837,
+   "pf_sin_swap": 1.14876618546765,
+   "pnl": 4309.08,
+   "pct_ganadoras": 40.909090909090914
+  },
+  {
+   "anio": "2024",
+   "operaciones": 92,
+   "pf": 0.8767565685576941,
+   "pf_sin_mejor": 0.7530830788053381,
+   "pf_sin_swap": 0.8794337222116171,
+   "pnl": -4545.06,
+   "pct_ganadoras": 33.69565217391305
+  },
+  {
+   "anio": "2025",
+   "operaciones": 92,
+   "pf": 1.649969738166362,
+   "pf_sin_mejor": 1.4815718042242767,
+   "pf_sin_swap": 1.6659199972455385,
+   "pnl": 22680.979999999996,
+   "pct_ganadoras": 34.78260869565217
+  },
+  {
+   "anio": "2026",
+   "operaciones": 60,
+   "pf": 1.401431522004131,
+   "pf_sin_mejor": 1.0519303927025496,
+   "pf_sin_swap": 1.405152467213454,
+   "pnl": 8726.760000000002,
+   "pct_ganadoras": 40.0
+  }
+ ],
+ "anios_is": [
+  {
+   "anio": "2011",
+   "operaciones": 83,
+   "pf": 1.1225319006141092,
+   "pf_sin_mejor": 1.0367073546400802,
+   "pf_sin_swap": 1.1319684482099321,
+   "pnl": 4252.140000000002,
+   "pct_ganadoras": 42.168674698795186
+  },
+  {
+   "anio": "2012",
+   "operaciones": 80,
+   "pf": 1.1704292980220807,
+   "pf_sin_mejor": 1.0739983980139938,
+   "pf_sin_swap": 1.1834249601462885,
+   "pnl": 5078.879999999998,
+   "pct_ganadoras": 45.0
+  },
+  {
+   "anio": "2013",
+   "operaciones": 82,
+   "pf": 1.088903509381919,
+   "pf_sin_mejor": 0.9618308629083739,
+   "pf_sin_swap": 1.1114400406674247,
+   "pnl": 3132.2599999999998,
+   "pct_ganadoras": 36.58536585365854
+  },
+  {
+   "anio": "2014",
+   "operaciones": 89,
+   "pf": 1.27950950542693,
+   "pf_sin_mejor": 1.1535146209369158,
+   "pf_sin_swap": 1.305439250889366,
+   "pnl": 8840.690000000004,
+   "pct_ganadoras": 40.44943820224719
+  },
+  {
+   "anio": "2015",
+   "operaciones": 84,
+   "pf": 0.9682007438972084,
+   "pf_sin_mejor": 0.8806391278438266,
+   "pf_sin_swap": 0.9813436063420724,
+   "pnl": -1062.43,
+   "pct_ganadoras": 40.476190476190474
+  },
+  {
+   "anio": "2016",
+   "operaciones": 90,
+   "pf": 1.222998559130062,
+   "pf_sin_mejor": 1.0634916742345166,
+   "pf_sin_swap": 1.2400839424789485,
+   "pnl": 8547.760000000002,
+   "pct_ganadoras": 37.77777777777778
+  },
+  {
+   "anio": "2017",
+   "operaciones": 85,
+   "pf": 1.5652335803843058,
+   "pf_sin_mejor": 1.4214732681832087,
+   "pf_sin_swap": 1.6069099198278756,
+   "pnl": 18975.27,
+   "pct_ganadoras": 38.82352941176471
+  },
+  {
+   "anio": "2018",
+   "operaciones": 80,
+   "pf": 2.0501174945304275,
+   "pf_sin_mejor": 1.8476928491192286,
+   "pf_sin_swap": 2.073782831340137,
+   "pnl": 26437.38,
+   "pct_ganadoras": 55.00000000000001
+  },
+  {
+   "anio": "2019",
+   "operaciones": 88,
+   "pf": 1.1612933477390424,
+   "pf_sin_mejor": 1.0369106233046474,
+   "pf_sin_swap": 1.172105450379523,
+   "pnl": 6174.49,
+   "pct_ganadoras": 39.77272727272727
+  },
+  {
+   "anio": "2020",
+   "operaciones": 90,
+   "pf": 1.102143622098573,
+   "pf_sin_mejor": 0.9826955312515112,
+   "pf_sin_swap": 1.1073622062755535,
+   "pnl": 4562.870000000002,
+   "pct_ganadoras": 36.666666666666664
+  },
+  {
+   "anio": "2021",
+   "operaciones": 101,
+   "pf": 1.5263209406392668,
+   "pf_sin_mejor": 1.4183481054080174,
+   "pf_sin_swap": 1.5437291330201612,
+   "pnl": 18552.850000000002,
+   "pct_ganadoras": 39.603960396039604
+  }
+ ],
+ "ops_mes": 7.59612594312246,
+ "ops_por_anio": 91.15351131746952,
+ "A_oos": {
+  "n": 0,
+  "pf": 0.0,
+  "pnl": 0.0,
+  "gan": 0.0,
+  "media": 0.0,
+  "desv": 0.0
+ },
+ "B_oos": {
+  "n": 430,
+  "pf": 1.428111299368202,
+  "pnl": 66415.71,
+  "gan": 40.46511627906977,
+  "media": 154.45513953488373,
+  "desv": -110.26329069767445
+ },
+ "A_is": {
+  "n": 1,
+  "pf": 0.0,
+  "pnl": -327.48,
+  "gan": 0.0,
+  "media": -327.48,
+  "desv": 0.0
+ },
+ "B_is": {
+  "n": 951,
+  "pf": 1.2734060499738589,
+  "pnl": 103819.64000000001,
+  "gan": 41.00946372239748,
+  "media": 109.16891692954786,
+  "desv": -60.97517770767612
+ },
+ "fin_semana_oos": 5,
+ "motivos_oos": {
+  "trailing": 341,
+  "stop_inicial": 64,
+  "48_velas": 22,
+  "trailing_gap": 3
+ },
+ "motivos_is": {
+  "trailing": 672,
+  "stop_inicial": 167,
+  "48_velas": 70,
+  "trailing_gap": 39,
+  "stop_inicial_gap": 4
+ },
+ "sin_futuro": {
+  "main": true,
+  "sig": true,
+  "atr14": true,
+  "atr": true,
+  "hma": true,
+  "nivel": true,
+  "baja": true,
+  "alza": true,
+  "asia": true,
+  "act": true,
+  "operaciones_iguales": true,
+  "n_ops_comparadas": 121,
+  "velas_comparadas": 15000
+ }
+}
